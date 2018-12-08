@@ -1,0 +1,1 @@
+<import src="../components/authorization$3bbdc9b5" /><template is="authorization$3bbdc9b5" data="{{ ...$root['0'], $root }}"/>

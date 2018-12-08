@@ -1,0 +1,8 @@
+<template name="daily$7e5a5b55">
+  <view class="_div data-v-c9ba4366 container">
+    <picker bindchange="handleProxy" value="{{index}}" range="{{nameList}}" data-eventid="{{'0'}}" data-comkey="{{$k}}" class="_picker data-v-c9ba4366">
+      <view class="_div data-v-c9ba4366 picker"> 姓名：{{nameList[index]||'请选择'}}
+      </view>
+    </picker>
+    <view class="_div data-v-c9ba4366 title">昨天工作内容：</view>
+    <view class="_div data-v-c9ba4366 section"><textarea value="{{formItem.yesterdaywork}}" bindinput="handleProxy" auto-height placeholder="请输入昨天工作内容" data-eventid="{{'1'}}" data-comkey="{{$k}}" class="_textarea data-v-c9ba4366" /></view> <view class="_div data-v-c9ba4366 title">完成情况：</view> <view class="_div data-v-c9ba4366 section"><textarea value="{{formItem.complate}}" bindinput="handleProxy" auto-height placeholder="请输入完成情况" data-eventid="{{'2'}}" data-comkey="{{$k}}" class="_textarea data-v-c9ba4366" /></view> <view class="_div data-v-c9ba4366 title">今日计划：</view> <view class="_div data-v-c9ba4366 section"><textarea value="{{formItem.todayplan}}" bindinput="handleProxy" auto-height placeholder="请输入今日计划" data-eventid="{{'3'}}" data-comkey="{{$k}}" class="_textarea data-v-c9ba4366" /></view> <view class="_div data-v-c9ba4366 title">存在问题：</view> <view class="_div data-v-c9ba4366 section"><textarea value="{{formItem.problem}}" bindinput="handleProxy" auto-height placeholder="请输入存在问题" data-eventid="{{'4'}}" data-comkey="{{$k}}" class="_textarea data-v-c9ba4366" /></view> <view class="_div data-v-c9ba4366 placeHolder"></view> <button class="_button data-v-c9ba4366 submit" bindtap="handleProxy" data-eventid="{{'5'}}" data-comkey="{{$k}}">提交</button></view></template>

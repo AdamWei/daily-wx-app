@@ -1,0 +1,1 @@
+<import src="../components/dailies$605d71b3" /><template is="dailies$605d71b3" data="{{ ...$root['0'], $root }}"/>

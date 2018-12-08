@@ -1,0 +1,32 @@
+{
+  "pages": [
+    "pages/index",
+    "pages/authorization",
+    "pages/daily",
+    "pages/dailies"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "miniapp-demo",
+    "navigationBarTextStyle": "black"
+  },
+  "subPackages": [
+    {
+      "root": "packageA",
+      "name": "packageA",
+      "independent": false,
+      "pages": [
+        "list"
+      ]
+    },
+    {
+      "root": "packageB",
+      "name": "packageB",
+      "independent": false,
+      "pages": [
+        "activity"
+      ]
+    }
+  ]
+}

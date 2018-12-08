@@ -1,0 +1,32 @@
+@import "/static/css/vendor.wxss";
+
+.container.data-v-c9ba4366 {
+  padding: 20rpx;
+  margin-top: 40rpx;
+}
+.picker.data-v-c9ba4366 {
+  margin: 20rpx 0 20rpx 20rpx;
+  font-size: 35rpx;
+}
+.section.data-v-c9ba4366 {
+  padding: 20rpx;
+  min-height: 100rpx;
+  font-size: 35rpx;
+  border: 2rpx solid #f1f1f1;
+}
+.title.data-v-c9ba4366 {
+  margin: 20rpx 0 20rpx 20rpx;
+  font-size: 35rpx;
+}
+.placeHolder.data-v-c9ba4366 {
+  height: 200rpx;
+}
+.submit.data-v-c9ba4366 {
+  position: fixed;
+  width: 700rpx;
+  margin-left: 5rpx;
+  bottom: 10rpx;
+  z-index: 1000;
+  background: #e51279;
+  color: #fff;
+}

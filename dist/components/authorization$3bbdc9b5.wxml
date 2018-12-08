@@ -1,0 +1,9 @@
+<template name="authorization$3bbdc9b5">
+  <view class="_div data-v-732fd4ad container">
+    <view class="_div data-v-732fd4ad logo-box">
+      <image src="../../static/images/Group.png" class="_img data-v-732fd4ad logo" alt></image>
+    </view>
+    <view class="_div data-v-732fd4ad title">{{title}}</view>
+    <view class="_div data-v-732fd4ad subtitle">{{subtitle}}</view> <button open-type="getUserInfo" lang="zh_CN" bindgetuserinfo="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}" class="_button data-v-732fd4ad">点击微信授权登陆</button>
+  </view>
+</template>

@@ -1,0 +1,8 @@
+<template name="Toast$dffb353a">
+  <view class="_div data-v-01de4f6b toast-wrapper {{customClass}}" hidden="{{!(!animateEnd)}}">
+    <view class="_i data-v-01de4f6b toast-icon {{iconClass}}" wx:if="{{iconClass}}"></view>
+    <view class="_div data-v-01de4f6b toast-img-wrapper" wx:if="{{img}}">
+      <image class="_img data-v-01de4f6b toast-img" src="{{img}}"></image>
+    </view> <label class="_span data-v-01de4f6b toast-text">{{ message }}</label>
+  </view>
+</template>

@@ -1,0 +1,5 @@
+<template name="dailies$605d71b3">
+  <view class="_div data-v-6d1116ab container">
+    <view wx:key="index" key="{{index}}" wx:for="{{list}}" wx:for-index="index" wx:for-item="item" class="_div data-v-6d1116ab">{{item.uname}}</view>
+  </view>
+</template>

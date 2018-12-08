@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "i-button": "../static/dist/button/index",
+    "i-card": "../static/dist/card/index",
+    "i-radio": "../static/dist/radio/index",
+    "i-toast": "../static/dist/toast/index"
+  }
+}

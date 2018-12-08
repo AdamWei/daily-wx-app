@@ -1,0 +1,14 @@
+<template name="index$d4bebce4">
+  <view class="_div data-v-9b2db6f4 container">
+    <view class="_div data-v-9b2db6f4 itemView" bindtap="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}">
+      <view class="_div data-v-9b2db6f4 navigator">填写日报</view>
+    </view>
+    <view class="_div data-v-9b2db6f4 itemView" bindtap="handleProxy" data-eventid="{{'1'}}" data-comkey="{{$k}}">
+      <view class="_div data-v-9b2db6f4 navigator">查看日报</view>
+    </view>
+    <view class="_div data-v-9b2db6f4 itemView">
+      <view class="_div data-v-9b2db6f4 navigator">修改密码</view>
+    </view>
+    <view class="_div data-v-9b2db6f4 itemView"><label class="_span data-v-9b2db6f4 navigator" bindtouchstart="logout">退出登录</label></view>
+  </view>
+</template>

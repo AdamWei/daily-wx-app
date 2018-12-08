@@ -1,0 +1,7 @@
+@import "/static/css/vendor.wxss";
+
+.container.data-v-046963fe {
+  padding: 20rpx;
+  font-size: 28rpx;
+  text-align: center;
+}

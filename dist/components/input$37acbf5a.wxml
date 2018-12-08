@@ -1,0 +1,5 @@
+<template name="input$37acbf5a">
+  <view class="_div data-v-55175762 container">
+    <image src="../../static/images/search.png" alt class="_img data-v-55175762 search"></image> <input type="text" placeholder="{{placeholderText}}" class="_input data-v-55175762 input" placeholder-class="placeholder" bindblur="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}" />
+  </view>
+</template>

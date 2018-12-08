@@ -1,0 +1,6 @@
+@import "/static/css/vendor.wxss";
+
+.container.data-v-6d1116ab {
+  padding: 20rpx;
+  margin-top: 40rpx;
+}

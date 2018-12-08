@@ -1,0 +1,1 @@
+<import src="../components/daily$7e5a5b55" /><template is="daily$7e5a5b55" data="{{ ...$root['0'], $root }}"/>

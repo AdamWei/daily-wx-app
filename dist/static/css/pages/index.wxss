@@ -1,0 +1,24 @@
+@import "/static/css/vendor.wxss";
+
+.container.data-v-9b2db6f4 {
+  padding: 20rpx;
+  margin-top: 40rpx;
+}
+.itemView.data-v-9b2db6f4 {
+  height: 100rpx;
+  justify-content: flex-start;
+  display: flex;
+  align-items: center;
+  width: 460rpx;
+  margin: 0 auto;
+  margin-top: 80rpx;
+  background-color: #e51279;
+  border: 2rpx solid #e51279;
+  border-radius: 8rpx;
+}
+.navigator.data-v-9b2db6f4 {
+  text-align: center;
+  width: 460rpx;
+  font-size: 40rpx;
+  color: #ffffff;
+}
