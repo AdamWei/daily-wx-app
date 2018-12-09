@@ -1,28 +1,28 @@
 @import "/static/css/vendor.wxss";
 
-.logo-box.data-v-732fd4ad {
+.logo-box.data-v-7a8e0a2b {
   margin: 220rpx auto;
   margin-bottom: 0;
 }
-.logo-box .logo.data-v-732fd4ad {
+.logo-box .logo.data-v-7a8e0a2b {
   width: 132rpx;
   height: 132rpx;
   display: block;
   margin: 0 auto;
 }
-.title.data-v-732fd4ad {
+.title.data-v-7a8e0a2b {
   text-align: center;
   font-size: 40rpx;
   color: #474245;
   margin-top: 16rpx;
   margin-bottom: 12rpx;
 }
-.subtitle.data-v-732fd4ad {
+.subtitle.data-v-7a8e0a2b {
   text-align: center;
   font-size: 32rpx;
   color: #474245;
 }
-._button.data-v-732fd4ad {
+button.data-v-7a8e0a2b {
   background: #FF4891;
   border-radius: 200rpx;
   width: 540rpx;

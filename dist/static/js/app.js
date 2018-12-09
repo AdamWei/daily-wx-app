@@ -1,14 +1,17 @@
-global.webpackJsonp([1],{
-
-/***/ 41:
+global.webpackJsonp([1],[
+/* 0 */,
+/* 1 */,
+/* 2 */,
+/* 3 */,
+/* 4 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__App__ = __webpack_require__(43);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__store__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__App__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__store__ = __webpack_require__(2);
 
 
 
@@ -17,7 +20,7 @@ __WEBPACK_IMPORTED_MODULE_0_vue___default.a.config.productionTip = false;
 __WEBPACK_IMPORTED_MODULE_1__App__["a" /* default */].store = __WEBPACK_IMPORTED_MODULE_2__store__["a" /* default */];
 __WEBPACK_IMPORTED_MODULE_1__App__["a" /* default */].mpType = 'app';
 
-var app = new __WEBPACK_IMPORTED_MODULE_0_vue___default.a(__WEBPACK_IMPORTED_MODULE_1__App__["a" /* default */]);
+const app = new __WEBPACK_IMPORTED_MODULE_0_vue___default.a(__WEBPACK_IMPORTED_MODULE_1__App__["a" /* default */]);
 app.$mount();
 
 /* harmony default export */ __webpack_exports__["default"] = ({
@@ -35,18 +38,18 @@ app.$mount();
 });
 
 /***/ }),
-
-/***/ 43:
+/* 5 */,
+/* 6 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_mpvue_loader_lib_selector_type_script_index_0_App_vue__ = __webpack_require__(45);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_mpvue_loader_lib_selector_type_script_index_0_App_vue__ = __webpack_require__(8);
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(44)
+  __webpack_require__(7)
 }
-var normalizeComponent = __webpack_require__(3)
+var normalizeComponent = __webpack_require__(1)
 /* script */
 
 /* template */
@@ -74,9 +77,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-38d0d480", Component.options)
+    hotAPI.createRecord("data-v-555c873e", Component.options)
   } else {
-    hotAPI.reload("data-v-38d0d480", Component.options)
+    hotAPI.reload("data-v-555c873e", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -87,39 +90,36 @@ if (false) {(function () {
 
 
 /***/ }),
-
-/***/ 44:
+/* 7 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
-
-/***/ 45:
+/* 8 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 
-var authorization = __webpack_require__(46);
-var App = getApp();
+const authorization = __webpack_require__(9);
+const App = getApp();
 /* harmony default export */ __webpack_exports__["a"] = ({
   data: {
     globalData: {
       userInfo: {}
     }
   },
-  onLaunch: function onLaunch(options) {
+  onLaunch(options) {
     console.log(options);
   },
-  created: function created() {
+  created() {
     //   小程序启动时检测是否授权
     //    authorization.authorization();
   }
 });
 
 /***/ }),
-
-/***/ 46:
+/* 9 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -127,62 +127,20 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (immutable) */ __webpack_exports__["authorization"] = authorization;
 /* harmony export (immutable) */ __webpack_exports__["saveUserInfo"] = saveUserInfo;
 /* harmony export (immutable) */ __webpack_exports__["removeWx"] = removeWx;
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_regenerator__ = __webpack_require__(47);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_regenerator___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_babel_runtime_regenerator__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_promise__ = __webpack_require__(13);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_promise___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_promise__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_helpers_asyncToGenerator__ = __webpack_require__(85);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_helpers_asyncToGenerator___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_babel_runtime_helpers_asyncToGenerator__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__api_js__ = __webpack_require__(92);
-
-
-
-
-// 检测RdSession是否过期
-var checkRdSessionState = function () {
-  var _ref = __WEBPACK_IMPORTED_MODULE_2_babel_runtime_helpers_asyncToGenerator___default()( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_babel_runtime_regenerator___default.a.mark(function _callee() {
-    return __WEBPACK_IMPORTED_MODULE_0_babel_runtime_regenerator___default.a.wrap(function _callee$(_context) {
-      while (1) {
-        switch (_context.prev = _context.next) {
-          case 0:
-            return _context.abrupt('return', new __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_promise___default.a(function (resolve, reject) {
-              var url = serviceUtils.getRequestUrl('checkRdSession');
-              Object(__WEBPACK_IMPORTED_MODULE_3__api_js__["post"])(url, obj).then(function (res) {
-                resolve(res);
-              });
-            }));
-
-          case 1:
-          case 'end':
-            return _context.stop();
-        }
-      }
-    }, _callee, this);
-  }));
-
-  return function checkRdSessionState() {
-    return _ref.apply(this, arguments);
-  };
-}();
-
-/**
- * 微信登录
- */
-
-
-var wxAPi = __webpack_require__(86);
-var serviceUtils = __webpack_require__(87);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__api_js__ = __webpack_require__(14);
+const wxAPi = __webpack_require__(10);
+const serviceUtils = __webpack_require__(11);
 
 
 function authorization() {
-  wxAPi.checkSession().then(function (res) {
-    var rdsession = wx.getStorageSync('rdsession');
+  wxAPi.checkSession().then(res => {
+    let rdsession = wx.getStorageSync('rdsession');
     console.log(rdsession);
     if (rdsession) {
-      checkRdSessionState().then(function (res) {
+      checkRdSessionState().then(res => {
         if (res) {
           console.log('没过期');
-          var userinfo = wxAPi.getStorageSync('userinfo');
+          let userinfo = wxAPi.getStorageSync('userinfo');
           if (!userinfo) {
             wxAPi.redirectTo('../../pages/login/main');
           } else {
@@ -197,15 +155,30 @@ function authorization() {
       console.log('无rdsession');
       wxLogin();
     }
-  }).catch(function (res) {
+  }).catch(res => {
     console.log(res + 'code 过期');
     wxLogin();
   });
-}function wxLogin() {
-  wxAPi.login().then(function (res) {
+}
+
+// 检测RdSession是否过期
+async function checkRdSessionState() {
+  return new Promise(function (resolve, reject) {
+    let url = serviceUtils.getRequestUrl('checkRdSession');
+    Object(__WEBPACK_IMPORTED_MODULE_0__api_js__["post"])(url, obj).then(function (res) {
+      resolve(res);
+    });
+  });
+}
+
+/**
+ * 微信登录
+ */
+function wxLogin() {
+  wxAPi.login().then(res => {
     console.log(res);
-    var code = res.code;
-    wxAuthorization(code).then(function (data) {
+    let code = res.code;
+    wxAuthorization(code).then(data => {
       wxAPi.redirectTo('../../pages/authorization');
     });
   });
@@ -214,12 +187,12 @@ function authorization() {
  * 微信授权
  */
 function wxAuthorization(code) {
-  return new __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_promise___default.a(function (resolve, reject) {
-    var url = serviceUtils.getRequestUrl('getSession');
-    var data = {
+  return new Promise(function (resolve, reject) {
+    let url = serviceUtils.getRequestUrl('getSession');
+    let data = {
       code: code
     };
-    Object(__WEBPACK_IMPORTED_MODULE_3__api_js__["post"])(url, data).then(function (res) {
+    Object(__WEBPACK_IMPORTED_MODULE_0__api_js__["post"])(url, data).then(function (res) {
       console.log(res);
       console.log(res.data.data.rdsession);
       wx.setStorageSync('rdsession', res.data.data.rdsession);
@@ -235,9 +208,9 @@ function wxAuthorization(code) {
  * 保存用户信息
  */
 function saveUserInfo(user) {
-  return new __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_promise___default.a(function (resolve, reject) {
-    var url = serviceUtils.getRequestUrl('saveUserInfo');
-    var data = {
+  return new Promise(function (resolve, reject) {
+    let url = serviceUtils.getRequestUrl('saveUserInfo');
+    let data = {
       avatarUrl: user.avatarUrl,
       city: user.city,
       province: user.province,
@@ -246,7 +219,7 @@ function saveUserInfo(user) {
       gender: user.gender,
       language: user.language
     };
-    Object(__WEBPACK_IMPORTED_MODULE_3__api_js__["post"])(url, data).then(function (res) {
+    Object(__WEBPACK_IMPORTED_MODULE_0__api_js__["post"])(url, data).then(function (res) {
       console.log(res);
       resolve(res);
     }).catch(function (err) {
@@ -260,11 +233,11 @@ function saveUserInfo(user) {
  * 解除微信绑定
  */
 function removeWx() {
-  return new __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_promise___default.a(function (resolve, reject) {
-    var app = getApp();
-    var url = servicesUtils.getRequestUrl('removeBanding');
-    var data = {};
-    Object(__WEBPACK_IMPORTED_MODULE_3__api_js__["post"])(url, data).then(function (res) {
+  return new Promise((resolve, reject) => {
+    const app = getApp();
+    let url = servicesUtils.getRequestUrl('removeBanding');
+    let data = {};
+    Object(__WEBPACK_IMPORTED_MODULE_0__api_js__["post"])(url, data).then(function (res) {
       wx.removeStorageSync('rdsession');
       wx.removeStorageSync('userinfo');
       resolve(res);
@@ -275,8 +248,7 @@ function removeWx() {
 }
 
 /***/ }),
-
-/***/ 86:
+/* 10 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -296,24 +268,21 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (immutable) */ __webpack_exports__["hideLoading"] = hideLoading;
 /* harmony export (immutable) */ __webpack_exports__["showModal"] = showModal;
 /* harmony export (immutable) */ __webpack_exports__["showActionSheet"] = showActionSheet;
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_promise__ = __webpack_require__(13);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_promise___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_promise__);
-
 // 获取code
 function login() {
-  return new __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_promise___default.a(function (resolve, reject) {
+  return new Promise((resolve, reject) => {
     wx.login({ success: resolve, fail: reject });
   });
 }
 // 校验用户当前session_key是否有效。
 function checkSession() {
-  return new __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_promise___default.a(function (resolve, reject) {
+  return new Promise((resolve, reject) => {
     wx.checkSession({ success: resolve, fail: reject });
   });
 }
 // 获取用户信息
 function getUserInfo() {
-  return new __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_promise___default.a(function (resolve, reject) {
+  return new Promise((resolve, reject) => {
     wx.getUserInfo({ success: resolve, fail: reject });
   });
 }
@@ -328,45 +297,41 @@ function getStorageSync(key) {
 
 // 保留当前页面，跳转到应用内的某个页面，使用wx.navigateBack可以返回到原页面。
 function navigateTo(url) {
-  return new __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_promise___default.a(function (resolve, reject) {
+  return new Promise((resolve, reject) => {
     wx.navigateTo({ url: url, success: resolve, fail: reject });
   });
 }
 
 // 关闭当前页面，跳转到应用内的某个页面
 function redirectTo(url) {
-  return new __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_promise___default.a(function (resolve, reject) {
+  return new Promise((resolve, reject) => {
     wx.redirectTo({ url: url, success: resolve, fail: reject });
   });
 }
 
 // 关闭所有页面，打开到应用内的某个页面。
 function reLaunch(url) {
-  return new __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_promise___default.a(function (resolve, reject) {
+  return new Promise((resolve, reject) => {
     wx.reLaunch({ url: url, success: resolve, fail: reject });
   });
 }
 
 // 跳转到 tabBar 页面，并关闭其他所有非 tabBar 页面
 function switchTab(url) {
-  return new __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_promise___default.a(function (resolve, reject) {
+  return new Promise((resolve, reject) => {
     wx.switchTab({ url: url, success: resolve, fail: reject });
   });
 }
 
 function getLocation(type) {
-  return new __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_promise___default.a(function (resolve, reject) {
+  return new Promise((resolve, reject) => {
     wx.getLocation({ type: type, success: resolve, fail: reject });
   });
 }
 
 // 显示消息提示框
 
-function showToast() {
-  var title = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : '成功';
-  var icon = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 'success';
-  var duration = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : 2000;
-
+function showToast(title = '成功', icon = 'success', duration = 2000) {
   wx.showToast({
     title: title,
     icon: icon,
@@ -376,9 +341,7 @@ function showToast() {
 
 // 显示 loading 提示框, 需主动调用 wx.hideLoading 才能关闭提示框
 
-function showLoading() {
-  var title = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : '加载中...';
-
+function showLoading(title = '加载中...') {
   wx.showLoading({
     title: title
   });
@@ -389,15 +352,12 @@ function hideLoading() {
   wx.hideLoading();
 }
 
-function showModal() {
-  var title = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : '提示';
-  var content = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : "这是一个模态弹窗";
-
-  return new __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_promise___default.a(function (resolve, reject) {
+function showModal(title = '提示', content = "这是一个模态弹窗") {
+  return new Promise((resolve, reject) => {
     wx.showModal({
       title: title,
       content: content,
-      success: function success(res) {
+      success: function (res) {
         resolve(res);
       }
     });
@@ -405,13 +365,13 @@ function showModal() {
 }
 
 function showActionSheet(list) {
-  return new __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_promise___default.a(function (resolve, reject) {
+  return new Promise((resolve, reject) => {
     wx.showActionSheet({
       itemList: list,
-      success: function success(res) {
+      success: function (res) {
         resolve(res);
       },
-      fail: function fail(res) {
+      fail: function (res) {
         reject(res.errMsg);
       }
     });
@@ -419,19 +379,15 @@ function showActionSheet(list) {
 }
 
 /***/ }),
-
-/***/ 87:
+/* 11 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (immutable) */ __webpack_exports__["getRequestUrl"] = getRequestUrl;
 /* harmony export (immutable) */ __webpack_exports__["mix"] = mix;
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_json_stringify__ = __webpack_require__(88);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_json_stringify___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_json_stringify__);
-
-var utils = __webpack_require__(90);
-var configs = __webpack_require__(91).configs;
+const utils = __webpack_require__(12);
+const configs = __webpack_require__(13).configs;
 
 /**
  * 获取MRYX后端服务器url
@@ -441,20 +397,15 @@ var configs = __webpack_require__(91).configs;
  * @param dataList [参数list]
  * @returns {string} [最终请求url]
  */
-function getRequestUrl(key) {
-  var extras = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : '';
-  var isExitQs = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : 1;
-  var dataList = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : {};
-  var isMps = arguments.length > 4 && arguments[4] !== undefined ? arguments[4] : false;
-
-  var qs = "";
-  var app = getApp();
+function getRequestUrl(key, extras = '', isExitQs = 1, dataList = {}, isMps = false) {
+  let qs = "";
+  const app = getApp();
   if (isExitQs) {
-    var model = encodeURIComponent(wx.getSystemInfoSync().model);
+    let model = encodeURIComponent(wx.getSystemInfoSync().model);
     utils.logi('------------------------', model.model);
     qs = qs + "?device_id=&env=weixin_app&platform=weixin_app&uuid=&version=3.8.0.3&model=" + model;
-    for (var _key in dataList) {
-      qs = qs + '&' + _key + '=' + dataList[_key];
+    for (let key in dataList) {
+      qs = qs + '&' + key + '=' + dataList[key];
     }
   }
   // const fromSource = app.globalData.fromSource
@@ -462,22 +413,22 @@ function getRequestUrl(key) {
   //     qs += "&fromSource=" + fromSource
   // }
 
-  var url = (utils.DEV_ENV ? configs.testhost : configs.host) + configs.paths[key] + extras + qs;
+  const url = (utils.DEV_ENV ? configs.testhost : configs.host) + configs.paths[key] + extras + qs;
   utils.logi('url=', url);
   return url;
 }
 
 //对参数进行加密，返回时间戳以及加密后的字串
 function mix(params) {
-  var timeStr = new Date().getTime();
+  let timeStr = new Date().getTime();
 
   timeStr /= 1000;
 
   timeStr = Math.round(timeStr);
 
-  var newStr = __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_json_stringify___default()(params) + timeStr + '55d85b3f4806043f84356de9e510375a';
-  var md5Str = md5.hexMD5(newStr);
-  var subStr = md5Str.substr(11, 16);
+  let newStr = JSON.stringify(params) + timeStr + '55d85b3f4806043f84356de9e510375a';
+  let md5Str = md5.hexMD5(newStr);
+  let subStr = md5Str.substr(11, 16);
 
   return {
     time: timeStr,
@@ -486,22 +437,24 @@ function mix(params) {
 }
 
 /***/ }),
-
-/***/ 90:
+/* 12 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DEBUG_MODE", function() { return DEBUG_MODE; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DEV_ENV", function() { return DEV_ENV; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DEBUG_STACK_MODE", function() { return DEBUG_STACK_MODE; });
 /* harmony export (immutable) */ __webpack_exports__["logi"] = logi;
 //以下代码需要在上线发布之前修改为false，禁止日志输出
-var DEBUG_MODE = true;
+const DEBUG_MODE = true;
+/* harmony export (immutable) */ __webpack_exports__["DEBUG_MODE"] = DEBUG_MODE;
+
 //开发环境标识，上线前修改为false，使用正式环境接口
-var DEV_ENV = true;
+const DEV_ENV = true;
+/* harmony export (immutable) */ __webpack_exports__["DEV_ENV"] = DEV_ENV;
+
 //是否输出插桩方法调用栈
-var DEBUG_STACK_MODE = false;
+const DEBUG_STACK_MODE = false;
+/* harmony export (immutable) */ __webpack_exports__["DEBUG_STACK_MODE"] = DEBUG_STACK_MODE;
+
 
 function formatTime(date) {
   var year = date.getFullYear();
@@ -546,11 +499,11 @@ function formatNumber(n) {
 }
 
 function getRequest(url) {
-  var theRequest = new Object();
-  var index = url.indexOf("?");
+  let theRequest = new Object();
+  let index = url.indexOf("?");
   if (index != -1) {
-    var str = url.substr(index + 1);
-    var strs = str.split("&");
+    let str = url.substr(index + 1);
+    let strs = str.split("&");
     for (var i = 0; i < strs.length; i++) {
       theRequest[strs[i].split("=")[0]] = decodeURIComponent(strs[i].split("=")[1]);
     }
@@ -564,7 +517,7 @@ function getRequest(url) {
  * @returns {boolean}
  */
 function gIsEmptyObject(Object) {
-  for (var t in Object) {
+  for (let t in Object) {
     return false;
   }
   return true;
@@ -577,12 +530,12 @@ function gIsEmptyObject(Object) {
  * @returns "a=1&b=2&c=3"
  */
 function buildQuery(params) {
-  var str = '';
-  var arr = [];
+  let str = '';
+  let arr = [];
   if (!params || gIsEmptyObject(params)) {
     return '';
   }
-  for (var key in params) {
+  for (let key in params) {
     arr.push(key + '=' + params[key]);
   }
   return arr.join('&');
@@ -594,8 +547,8 @@ function buildQuery(params) {
  * @returns 2017-8-18
  */
 function getNowFormatDate() {
-  var date = new Date();
-  var strDate = date.getFullYear() + '-' + (date.getMonth() + 1) + '-' + date.getDate();
+  let date = new Date();
+  let strDate = date.getFullYear() + '-' + (date.getMonth() + 1) + '-' + date.getDate();
   return strDate;
 }
 
@@ -630,10 +583,10 @@ var index = 0;
 function logTime(arg) {
   index++;
 
-  var app = getApp();
-  var current_date = new Date();
+  const app = getApp();
+  let current_date = new Date();
 
-  var offsetTime = 0;
+  let offsetTime = 0;
   if (app && app.globalData.lastTimeLogFunctionCallTime !== 0) {
     if (app.globalData.startTotalTime == 0) {
       app.globalData.startTotalTime = current_date.getTime();
@@ -641,17 +594,17 @@ function logTime(arg) {
     offsetTime = current_date.getTime() - app.globalData.lastTimeLogFunctionCallTime;
   }
 
-  var desc = current_date.getMinutes() + "分" + current_date.getSeconds() + '秒' + current_date.getMilliseconds() + "毫秒";
+  let desc = current_date.getMinutes() + "分" + current_date.getSeconds() + '秒' + current_date.getMilliseconds() + "毫秒";
 
   if (app && app.globalData.startTotalTime != 0) {
-    var totalStartTime = new Date(current_date.getTime() - app.globalData.startTotalTime);
+    let totalStartTime = new Date(current_date.getTime() - app.globalData.startTotalTime);
     desc += ", 启动总耗时: " + totalStartTime.getMinutes() + "分" + totalStartTime.getSeconds() + "秒" + totalStartTime.getMilliseconds() + "毫秒";
   }
   if (offsetTime != 0) {
-    var time = new Date(offsetTime);
+    let time = new Date(offsetTime);
     desc += ", 与上一次调用的差值为: " + time.getSeconds() + "秒" + time.getMilliseconds() + "毫秒";
     if (DEBUG_STACK_MODE) {
-      var currentCallStack = new Error().stack;
+      let currentCallStack = new Error().stack;
       desc += ", 当前的调用栈为: " + currentCallStack;
     }
   }
@@ -671,9 +624,7 @@ function logi(infoMsg) {
 
 function logDebugInfo() {
   if (DEBUG_MODE) {
-    var _console;
-
-    (_console = console).debug.apply(_console, arguments);
+    console.debug(...arguments);
   }
 }
 
@@ -689,27 +640,25 @@ function loge(error) {
   gIsEmptyObject: gIsEmptyObject,
   getRequest: getRequest,
   buildQuery: buildQuery,
-  getNowFormatDate: getNowFormatDate,
-  deciToHex: deciToHex,
+  getNowFormatDate,
+  deciToHex,
   logTimeTag: logTime,
-  logi: logi,
-  DEBUG_MODE: DEBUG_MODE,
-  logDebugInfo: logDebugInfo,
-  loge: loge,
-  formatDateNoYear: formatDateNoYear,
-  DEV_ENV: DEV_ENV
+  logi,
+  DEBUG_MODE,
+  logDebugInfo,
+  loge,
+  formatDateNoYear,
+  DEV_ENV
 });
 
 /***/ }),
-
-/***/ 91:
+/* 13 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "configs", function() { return configs; });
 
-var configs = {
+const configs = {
   //线上环境
   // host: '',
   testhost: '',
@@ -756,24 +705,22 @@ var configs = {
      */
   }
 };
+/* harmony export (immutable) */ __webpack_exports__["configs"] = configs;
+
 
 /***/ }),
-
-/***/ 92:
+/* 14 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_promise__ = __webpack_require__(13);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_promise___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_promise__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vue__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_vue__);
 
-
-var Fly = __webpack_require__(93);
-var fly = new Fly();
+const Fly = __webpack_require__(15);
+const fly = new Fly();
 
 //添加请求拦截器
-fly.interceptors.request.use(function (request) {
+fly.interceptors.request.use(request => {
   //给所有请求添加自定义header
   request.headers["X-Tag"] = "flyio";
   //打印出请求体
@@ -784,17 +731,16 @@ fly.interceptors.request.use(function (request) {
 });
 
 //添加响应拦截器，响应拦截器会在then/catch处理之前执行
-fly.interceptors.response.use(function (response) {
+fly.interceptors.response.use(response => {
   //只将请求结果的data字段返回
   return response.data;
-}, function (err) {
+}, err => {
   //发生网络错误后会走到这里
-  return __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_promise___default.a.resolve("err");
+  return Promise.resolve("err");
 });
 
-__WEBPACK_IMPORTED_MODULE_1_vue___default.a.prototype.$http = fly; //将fly实例挂在vue原型上
+__WEBPACK_IMPORTED_MODULE_0_vue___default.a.prototype.$http = fly; //将fly实例挂在vue原型上
 
 /***/ })
-
-},[41]);
+],[4]);
 //# sourceMappingURL=app.js.map

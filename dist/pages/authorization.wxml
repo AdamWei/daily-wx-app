@@ -1,1 +1,1 @@
-<import src="../components/authorization$3bbdc9b5" /><template is="authorization$3bbdc9b5" data="{{ ...$root['0'], $root }}"/>
+<import src="../components/authorization$9831a8d0" /><template is="authorization$9831a8d0" data="{{ ...$root['0'], $root }}"/>

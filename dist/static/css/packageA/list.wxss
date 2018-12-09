@@ -1,11 +1,11 @@
 @import "/static/css/vendor.wxss";
 
-.container.data-v-72b9901e {
+.container.data-v-683ee3ef {
   padding: 20rpx;
   font-size: 28rpx;
   text-align: center;
 }
-.container .go.data-v-72b9901e {
+.container .go.data-v-683ee3ef {
   margin-top: 40rpx;
   border-radius: 10rpx;
   border: 2rpx solid #ccc;

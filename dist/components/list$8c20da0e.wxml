@@ -1,4 +1,0 @@
-<template name="list$8c20da0e">
-  <view class="_div data-v-72b9901e container"> 列表页 <navigator url="/packageB/activity" class="_a data-v-72b9901e go">去往活动页面</navigator>
-  </view>
-</template>

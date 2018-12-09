@@ -1,13 +1,16 @@
 @import "/static/css/vendor.wxss";
 
-.container.data-v-9b2db6f4 {
+.container.data-v-f3488ff8 {
   padding: 20rpx;
   margin-top: 40rpx;
 }
-.itemView.data-v-9b2db6f4 {
+.itemView.data-v-f3488ff8 {
   height: 100rpx;
+  -ms-flex-pack: start;
   justify-content: flex-start;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-align: center;
   align-items: center;
   width: 460rpx;
   margin: 0 auto;
@@ -16,7 +19,7 @@
   border: 2rpx solid #e51279;
   border-radius: 8rpx;
 }
-.navigator.data-v-9b2db6f4 {
+.navigator.data-v-f3488ff8 {
   text-align: center;
   width: 460rpx;
   font-size: 40rpx;

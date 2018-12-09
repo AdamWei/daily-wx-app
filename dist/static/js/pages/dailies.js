@@ -1,17 +1,17 @@
-global.webpackJsonp([5],{
+global.webpackJsonp([2],{
 
-/***/ 121:
+/***/ 36:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_mpvue_loader_lib_selector_type_script_index_0_dailies_vue__ = __webpack_require__(123);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_mpvue_loader_lib_template_compiler_index_id_data_v_6d1116ab_hasScoped_true_transformToRequire_video_src_source_src_img_src_image_xlink_href_node_modules_mpvue_loader_lib_selector_type_template_index_0_dailies_vue__ = __webpack_require__(124);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_mpvue_loader_lib_selector_type_script_index_0_dailies_vue__ = __webpack_require__(38);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_mpvue_loader_lib_template_compiler_index_id_data_v_0eacc2a9_hasScoped_true_transformToRequire_video_src_source_src_img_src_image_xlink_href_node_modules_mpvue_loader_lib_selector_type_template_index_0_dailies_vue__ = __webpack_require__(43);
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(122)
+  __webpack_require__(37)
 }
-var normalizeComponent = __webpack_require__(3)
+var normalizeComponent = __webpack_require__(1)
 /* script */
 
 /* template */
@@ -19,12 +19,12 @@ var normalizeComponent = __webpack_require__(3)
 /* styles */
 var __vue_styles__ = injectStyle
 /* scopeId */
-var __vue_scopeId__ = "data-v-6d1116ab"
+var __vue_scopeId__ = "data-v-0eacc2a9"
 /* moduleIdentifier (server only) */
 var __vue_module_identifier__ = null
 var Component = normalizeComponent(
   __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_mpvue_loader_lib_selector_type_script_index_0_dailies_vue__["a" /* default */],
-  __WEBPACK_IMPORTED_MODULE_1__node_modules_mpvue_loader_lib_template_compiler_index_id_data_v_6d1116ab_hasScoped_true_transformToRequire_video_src_source_src_img_src_image_xlink_href_node_modules_mpvue_loader_lib_selector_type_template_index_0_dailies_vue__["a" /* default */],
+  __WEBPACK_IMPORTED_MODULE_1__node_modules_mpvue_loader_lib_template_compiler_index_id_data_v_0eacc2a9_hasScoped_true_transformToRequire_video_src_source_src_img_src_image_xlink_href_node_modules_mpvue_loader_lib_selector_type_template_index_0_dailies_vue__["a" /* default */],
   __vue_styles__,
   __vue_scopeId__,
   __vue_module_identifier__
@@ -40,9 +40,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-6d1116ab", Component.options)
+    hotAPI.createRecord("data-v-0eacc2a9", Component.options)
   } else {
-    hotAPI.reload("data-v-6d1116ab", Component.options)
+    hotAPI.reload("data-v-0eacc2a9", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -54,19 +54,19 @@ if (false) {(function () {
 
 /***/ }),
 
-/***/ 122:
+/***/ 37:
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
 
-/***/ 123:
+/***/ 38:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components_input__ = __webpack_require__(26);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_mpvue_toast__ = __webpack_require__(27);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components_input__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_mpvue_toast__ = __webpack_require__(39);
 //
 //
 //
@@ -82,36 +82,32 @@ if (false) {(function () {
 
 
 /* harmony default export */ __webpack_exports__["a"] = ({
-  data: function data() {
+  data() {
     return {
       list: []
     };
   },
-
   components: {
     'mr-input': __WEBPACK_IMPORTED_MODULE_0__components_input__["a" /* default */],
     toast: __WEBPACK_IMPORTED_MODULE_1_mpvue_toast__["a" /* default */]
   },
 
   methods: {},
-  created: function created() {
-    var _this = this;
-
-    this.$http.get('http://localhost:3000/daily/list').then(function (d) {
+  created() {
+    this.$http.get('http://localhost:3000/daily/list').then(d => {
       //输出请求数据
-      _this.list = d.data;
-    }).catch(function (err) {
+      this.list = d.data;
+    }).catch(err => {
       console.log(err.status, err.message);
     });
   },
 
-
-  onShareAppMessage: function onShareAppMessage() {}
+  onShareAppMessage: function () {}
 });
 
 /***/ }),
 
-/***/ 124:
+/***/ 43:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -131,11 +127,11 @@ var esExports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-     require("vue-hot-reload-api").rerender("data-v-6d1116ab", esExports)
+     require("vue-hot-reload-api").rerender("data-v-0eacc2a9", esExports)
   }
 }
 
 /***/ })
 
-},[136]);
+},[55]);
 //# sourceMappingURL=dailies.js.map

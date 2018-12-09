@@ -1,1 +1,1 @@
-<import src="../components/activity$6de2e509" /><template is="activity$6de2e509" data="{{ ...$root['0'], $root }}"/>
+<import src="../components/activity$1fb163ac" /><template is="activity$1fb163ac" data="{{ ...$root['0'], $root }}"/>

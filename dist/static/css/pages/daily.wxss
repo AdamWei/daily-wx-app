@@ -1,27 +1,27 @@
 @import "/static/css/vendor.wxss";
 
-.container.data-v-c9ba4366 {
+.container.data-v-6f1571cb {
   padding: 20rpx;
   margin-top: 40rpx;
 }
-.picker.data-v-c9ba4366 {
+.picker.data-v-6f1571cb {
   margin: 20rpx 0 20rpx 20rpx;
   font-size: 35rpx;
 }
-.section.data-v-c9ba4366 {
+.section.data-v-6f1571cb {
   padding: 20rpx;
   min-height: 100rpx;
   font-size: 35rpx;
   border: 2rpx solid #f1f1f1;
 }
-.title.data-v-c9ba4366 {
+.title.data-v-6f1571cb {
   margin: 20rpx 0 20rpx 20rpx;
   font-size: 35rpx;
 }
-.placeHolder.data-v-c9ba4366 {
+.placeHolder.data-v-6f1571cb {
   height: 200rpx;
 }
-.submit.data-v-c9ba4366 {
+.submit.data-v-6f1571cb {
   position: fixed;
   width: 700rpx;
   margin-left: 5rpx;
