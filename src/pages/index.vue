@@ -12,6 +12,9 @@
       <div class="itemView">
         <span class='navigator' bindtouchstart='logout'>退出登录</span>
       </div>
+      <div class="itemView">
+        <span class='navigator' @click='toRegister'>用户注册</span>
+      </div>
 
   </div>
 </template>
@@ -41,6 +44,11 @@
        wx.navigateTo({
         url: '/pages/dailies'
       })
+     },
+     toRegister() {
+       wx.navigateTo({
+         url:'/pages/register'
+       })
      }
     },
     created() {

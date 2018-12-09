@@ -3,14 +3,15 @@ global.webpackJsonp([1],[
 /* 1 */,
 /* 2 */,
 /* 3 */,
-/* 4 */
+/* 4 */,
+/* 5 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__App__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__App__ = __webpack_require__(7);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__store__ = __webpack_require__(2);
 
 
@@ -38,16 +39,16 @@ app.$mount();
 });
 
 /***/ }),
-/* 5 */,
-/* 6 */
+/* 6 */,
+/* 7 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_mpvue_loader_lib_selector_type_script_index_0_App_vue__ = __webpack_require__(8);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_mpvue_loader_lib_selector_type_script_index_0_App_vue__ = __webpack_require__(9);
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(7)
+  __webpack_require__(8)
 }
 var normalizeComponent = __webpack_require__(1)
 /* script */
@@ -90,18 +91,18 @@ if (false) {(function () {
 
 
 /***/ }),
-/* 7 */
+/* 8 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
-/* 8 */
+/* 9 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 
-const authorization = __webpack_require__(9);
+const authorization = __webpack_require__(10);
 const App = getApp();
 /* harmony default export */ __webpack_exports__["a"] = ({
   data: {
@@ -119,7 +120,7 @@ const App = getApp();
 });
 
 /***/ }),
-/* 9 */
+/* 10 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -127,9 +128,9 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (immutable) */ __webpack_exports__["authorization"] = authorization;
 /* harmony export (immutable) */ __webpack_exports__["saveUserInfo"] = saveUserInfo;
 /* harmony export (immutable) */ __webpack_exports__["removeWx"] = removeWx;
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__api_js__ = __webpack_require__(14);
-const wxAPi = __webpack_require__(10);
-const serviceUtils = __webpack_require__(11);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__api_js__ = __webpack_require__(15);
+const wxAPi = __webpack_require__(11);
+const serviceUtils = __webpack_require__(12);
 
 
 function authorization() {
@@ -248,7 +249,7 @@ function removeWx() {
 }
 
 /***/ }),
-/* 10 */
+/* 11 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -379,15 +380,15 @@ function showActionSheet(list) {
 }
 
 /***/ }),
-/* 11 */
+/* 12 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (immutable) */ __webpack_exports__["getRequestUrl"] = getRequestUrl;
 /* harmony export (immutable) */ __webpack_exports__["mix"] = mix;
-const utils = __webpack_require__(12);
-const configs = __webpack_require__(13).configs;
+const utils = __webpack_require__(13);
+const configs = __webpack_require__(14).configs;
 
 /**
  * 获取MRYX后端服务器url
@@ -437,7 +438,7 @@ function mix(params) {
 }
 
 /***/ }),
-/* 12 */
+/* 13 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -652,7 +653,7 @@ function loge(error) {
 });
 
 /***/ }),
-/* 13 */
+/* 14 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -709,14 +710,14 @@ const configs = {
 
 
 /***/ }),
-/* 14 */
+/* 15 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_vue__);
 
-const Fly = __webpack_require__(15);
+const Fly = __webpack_require__(16);
 const fly = new Fly();
 
 //添加请求拦截器
@@ -742,5 +743,5 @@ fly.interceptors.response.use(response => {
 __WEBPACK_IMPORTED_MODULE_0_vue___default.a.prototype.$http = fly; //将fly实例挂在vue原型上
 
 /***/ })
-],[4]);
+],[5]);
 //# sourceMappingURL=app.js.map

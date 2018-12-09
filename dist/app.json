@@ -3,7 +3,8 @@
     "pages/index",
     "pages/authorization",
     "pages/daily",
-    "pages/dailies"
+    "pages/dailies",
+    "pages/register"
   ],
   "window": {
     "backgroundTextStyle": "light",

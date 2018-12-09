@@ -15,6 +15,8 @@ module.exports = [
     path: 'pages/daily'
   },{
     path: 'pages/dailies'
+  },{
+    path: 'pages/register'
   }, {
     path: 'packageA/list',
     subPackage: true,
